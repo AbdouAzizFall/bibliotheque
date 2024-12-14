@@ -11,6 +11,33 @@
     require_once('connexion.php');
     require_once('header.php');
     require_once('pages\listeLivres.php');
+
+    if(isset($_GET['page'])){
+        switch ($_GET['page']) {
+            case 'admin':
+                require_once('pages\gesAdmin.php');
+                break;
+            case 'livre':
+                require_once('pages\gesLivres.php');
+                break;
+            case 'emprunt':
+                require_once('pages\gesEmprunts.php');
+                break; 
+            case 'client':
+                require_once('pages\gesClients.php');
+                break;
+            case 'rapport':
+                require_once('pages\rapport.php');
+                break;               
+            case 'deconn':
+                require_once('auth\deconn.php');
+                break; 
+            case 'ajout':
+                require_once('traitement\ajout.php');
+                break;  
+                    
+        }
+    }
     
 
     ?>

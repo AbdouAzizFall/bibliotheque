@@ -18,7 +18,7 @@
 
   <!-- Formulaire de recherche -->
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="par libellé" aria-label="Search">
+    <input class="form-control mr-sm-2" type="search" placeholder="par titre" aria-label="Search">
     <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Rechercher</button>
   </form>
 </nav>
@@ -27,12 +27,12 @@
 <div class="collapse" id="menuCollapse">
   <div class="bg-dark p-4">
     <h5 class="text-white">Menu</h5>
-    <button class="btn btn-primary mb-2">Gestion des Administrateurs </button>
-    <button class="btn btn-secondary mb-2">Gestion des Livres</button>
-    <button class="btn btn-success mb-2">Gestion des Emprunts</button>
-    <button class="btn btn-warning mb-2">Gestion des Clients</button>
-    <button class="btn btn-info mb-2">Statistiques et Rapports</button>
-    <button class="btn btn-danger">Deconnexion</button>
+    <a href="?page=admin"><button class="btn btn-primary mb-2">Gestion des Administrateurs </button></a>
+    <a href="?page=livre"><button class="btn btn-secondary mb-2">Gestion des Livres</button></a>
+    <a href="?page=emprunt"><button class="btn btn-success mb-2">Gestion des Emprunts</button>
+    <a href="?page=client"><button class="btn btn-warning mb-2">Gestion des Clients</button>
+    <a href="?page=rapport"><button class="btn btn-info mb-2">Statistiques et Rapports</button>
+    <a href="?page=deconn"><button class="btn btn-danger">Deconnexion</button></a>
 
   </div>
 </div>
